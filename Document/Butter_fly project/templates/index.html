@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Butterfly Inspiration</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero-text h1 {
+      font-size: 2.8rem;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      margin: 20px 0;
+    }
+    .hero-text a {
+      text-decoration: none;
+      background-color: #0a74da;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      background-color: rgba(255,255,255,0.8);
+      padding: 20px 60px;
+      z-index: 100;
+    }
+    header a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+    }
+    header a:hover {
+      color: #0a74da;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+    <a href="/predict">Get Started</a>
+  </header>
+  <section class="hero">
+    <img src="/static/bg.jpg" alt="Butterfly Background"/>
+    <div class="hero-text">
+      <h1>Just when the caterpillar thought the world was over,<br> it became a butterfly.</h1>
+      <p>They can't see how truly beautiful they are, but everyone else can. People are like that as well.</p>
+      <a href="/predict">Get Started</a>
+    </div>
+  </section>
+</body>
+</html>
